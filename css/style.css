@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+	width: 100%;
+}
+
+.header {
+  border-top: 10px solid #8F6E3C;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialNav ul li{
+  display: inline-block;
+}
