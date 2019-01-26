@@ -10,25 +10,73 @@
     <div class="wrapper">
 
       <div class="header">
-        <a href="#"><h1>WEBSITE NAME</h1></a>
-        <div class="socialNav">
-          <ul>
-            <li><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
-    				<li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
-    				<li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
-    				<li><a href="sitemap.xml"><i class="fas fa-sitemap"></i></a></li>
-          </ul>
+        <div class="headerTitle">
+          <a href="#"><h1>Knjižara</h1></a>
+          <div class="socialNav">
+            <ul>
+              <li><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
+      				<li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+      				<li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+      				<li><a href="sitemap.xml"><i class="fas fa-sitemap"></i></a></li>
+            </ul>
+          </div>
         </div>
+        <nav class="navigationBar">
+          <ul class="navigationList">
+            <li><a href="#">Početna</a></li>
+            <li><a href="#">Prodavnica</a></li>
+            <li><a href="#">Autori</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">O nama</a></li>
+          </ul>
+        </nav>
       </div>
 
       <div class="contentWrap">
         <div class="contentSide">
-          <div class="loginRegister">
+          <div class="loginRegister sideBox">
+            <div class="miniHeader">
+              <p class="miniHeaderText">Prijava/Registracija</p>
+            </div>
+            <form class="webForm">
+              <label>Username:</label></br>
+              <input type="text" id="username" name="usernameField" /></br></br>
+              <label>Password:</label></br>
+              <input type="password" id="password" name="passwordField" /></br>
+              <input type="button" id="login" name="loginButton" value="Log In" />
+              <input type="button" id="register" name="registerButton" value="Register"/>
+            </form>
+            <div class="registerForm webForm">
+              <label>Username:</label></br>
+              <input type="text" id="usernameReg" name="usernameRegField" /></br></br>
+              <label>Password:</label></br>
+              <input type="password" id="passwordReg" name="passwordRegField" /></br></br>
+              <label>Repeat password:</label></br>
+              <input type="password" id="repeatPassword" name="passwordRepRegField" /></br></br>
+              <label>E-mail:</label></br>
+              <input type="text" id="emailReg" name="registrationMail" /></br>
+              <input type="button" id="registration" name="registrationButton" value="Register" />
+            </div>
           </div>
-          <nav>
-
-          </nav>
+          <div class="topFive sideBox">
+            <div class="miniHeader">
+              <p class="miniHeaderText">Top 5 Naslova</p>
+            </div>
+            <div class="topFiveHold">
+              <div class="topFiveImg">
+              </div>
+              <div class="topFiveImg">
+              </div>
+              <div class="topFiveImg">
+              </div>
+              <div class="topFiveImg">
+              </div>
+              <div class="topFiveImg">
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="contentMain">
 
         </div>
