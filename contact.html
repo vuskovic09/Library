@@ -11,10 +11,10 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <title>Libro | Shop</title>
+    <title>Libro | Kontakt</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrsapper">
 
       <div class="header">
         <div class="headerTitle">
@@ -38,59 +38,24 @@
       </div>
 
       <div class="contentWrap">
-        <div class="contentSide">
-          <div class="loginRegister sideBox">
-            <div class="miniHeader">
-              <p class="miniHeaderText">Prijava/Registracija</p>
-            </div>
-            <form class="webForm">
-              <label>Username:</label></br>
-              <input type="text" id="username" name="usernameField" /></br></br>
-              <label>Password:</label></br>
-              <input type="password" id="password" name="passwordField" /></br>
-              <input type="button" id="login" name="loginButton" value="Log In" />
-              <input type="button" id="register" name="registerButton" value="Register"/>
-            </form>
-            <div class="registerForm">
-              <form class="webForm">
-                <label>Username:</label></br>
-                <input type="text" id="usernameReg" name="usernameRegField" /></br></br>
-                <label>Password:</label></br>
-                <input type="password" id="passwordReg" name="passwordRegField" /></br></br>
-                <label>Repeat password:</label></br>
-                <input type="password" id="repeatPassword" name="passwordRepRegField" /></br></br>
-                <label>E-mail:</label></br>
-                <input type="text" id="emailReg" name="registrationMail" /></br>
-                <input type="button" id="registration" name="registrationButton" value="Register" />
-              </form>
-              <p id="errorBox"></p>
-            </div>
+        <div class="contactHold">
+          <div class="miniHeader">
+            <p class="miniHeaderText">Kontakt</p>
           </div>
-          <div class="topFive sideBox">
-            <div class="miniHeader">
-              <p class="miniHeaderText">Top 5 Naslova</p>
+          <div id="contactForm">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2380.635890061914!2d20.368256589773736!3d44.79977959966127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1548572366106" width="600" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="contactDetails">
+              <ul>
+      					<li><span class="fas fa-map-marker-alt"></span> Location: Belgrade, Serbia</li>
+      					<li><span class="fas fa-phone-volume"></span> Phone: +38169/4063/883</li>
+      					<li><span class="fas fa-at"></span> E-Mail: Libro.biz&#64;gmail.com</li>
+      				</ul>
             </div>
-            <div class="topFiveHold">
-              <div class="topFiveImg">
-              </div>
-              <div class="topFiveImg">
-              </div>
-              <div class="topFiveImg">
-              </div>
-              <div class="topFiveImg">
-              </div>
-              <div class="topFiveImg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contentMain">
-          <div class="prodavnicaHold">
-            <div class="miniHeader shopTitle">
-              <p class="miniHeaderText">Prodavnica</p>
-            </div>
-            <div id="booksHolder">
+            <div class="contactForma">
+              <label>Ime i prezime:</label><input id="imePrezime" name="contactIme" type="text" /><span id="imeError">Neispravno uneto.</span></br>
+              <label>E-mail adresa:</label><input id="emailForm" name="contactIme" type="text" /><span id="emailError">Neispravno uneto.</span></br>
+              <textarea rows="20" cols="62"></textarea></br>
+              <input id="buttonContact" value="Pošaljite poruku" type="button" />
 
             </div>
           </div>
@@ -123,6 +88,6 @@
     </div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>
-    <script type="text/javascript" src="js/scripts-shop.js"></script>
+    <script type="text/javascript" src="js/scripts-contact.js"></script>
   </body>
 </html>

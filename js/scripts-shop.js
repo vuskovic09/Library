@@ -68,26 +68,10 @@ $( document ).ready(function() {
     });
 
 
-    //SLIDER
-    $('.slider > img:gt(0)').hide();
-    setInterval(function(){
-      $('.slider > img:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('.slider');
-    }, 3000);
-
-    //SNIZENJA
-    var snizenja = document.getElementById('snizeneKnjige');
-    var prefiks = 'snizen';
-    for (var i = 0; i < 4; i++) {
-      snizenja.innerHTML += "<div class=snizeno><img class=snizenKNJ src=images/" + prefiks + [i] + ".jpg /><input type=button class=buyBook value=Naruči /></div>"
+    var bookArea = document.getElementById('booksHolder');
+    var prefix = "bookS";
+    for (var i = 0; i < 20; i++) {
+      bookArea.innerHTML += "<div class=snizeno><img class=snizenKNJ src=images/" + prefix + [i] + ".jpg /><input type=button class=buyBook value=Naruči /></div>"
     }
-
-    //AUTOR DANA
-    var autorDana = document.getElementById('autorDana');
-    autorDana.innerHTML = "<div class=miniHeader><p class=miniHeaderText>Autor dana - Kon Igulden</p></div><div class=autorHold><img src=images/autorDana.jpg /><div class=autorText><p>KON IGULDEN rođen je 1971. godine. Detinjstvo je proveo u Londonu, gde se i školovao. Sedam godina predavao je engleski u školi, da bi najzad napustio taj posao kako bi se posvetio pisanju. Oženjen je, ima četvoro dece i živi u Hetfordširu u Engleskoj.</p></div></div>";
 
 });
