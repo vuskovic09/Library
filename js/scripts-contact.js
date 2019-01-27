@@ -10,8 +10,8 @@ $(document).ready(function(){
     var emailFormRegEx = /^[a-z0-9](\.?[a-z0-9_-]){0,}@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/;
     var imePrezimeCheck = imePrezimeRegEx.test(imePrezime);
     var emailCheck = emailFormRegEx.test(emailForm);
-
-    if (imePrezime) {
+    console.log(imePrezimeCheck);
+    if (imePrezimeCheck) {
       imeError.hide();
     }
     else {
