@@ -23,11 +23,10 @@
         </div>
         <nav class="navigationBar">
           <ul class="navigationList">
-            <li><a href="#">Početna</a></li>
-            <li><a href="#">Prodavnica</a></li>
-            <li><a href="#">Autori</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">O nama</a></li>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="shop.html">Prodavnica</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="aboutUs.html">O nama</a></li>
           </ul>
         </nav>
       </div>
@@ -46,16 +45,19 @@
               <input type="button" id="login" name="loginButton" value="Log In" />
               <input type="button" id="register" name="registerButton" value="Register"/>
             </form>
-            <div class="registerForm webForm">
-              <label>Username:</label></br>
-              <input type="text" id="usernameReg" name="usernameRegField" /></br></br>
-              <label>Password:</label></br>
-              <input type="password" id="passwordReg" name="passwordRegField" /></br></br>
-              <label>Repeat password:</label></br>
-              <input type="password" id="repeatPassword" name="passwordRepRegField" /></br></br>
-              <label>E-mail:</label></br>
-              <input type="text" id="emailReg" name="registrationMail" /></br>
-              <input type="button" id="registration" name="registrationButton" value="Register" />
+            <div class="registerForm">
+              <form class="webForm">
+                <label>Username:</label></br>
+                <input type="text" id="usernameReg" name="usernameRegField" /></br></br>
+                <label>Password:</label></br>
+                <input type="password" id="passwordReg" name="passwordRegField" /></br></br>
+                <label>Repeat password:</label></br>
+                <input type="password" id="repeatPassword" name="passwordRepRegField" /></br></br>
+                <label>E-mail:</label></br>
+                <input type="text" id="emailReg" name="registrationMail" /></br>
+                <input type="button" id="registration" name="registrationButton" value="Register" />
+              </form>
+              <p id="errorBox"></p>
             </div>
           </div>
           <div class="topFive sideBox">
@@ -78,11 +80,55 @@
         </div>
 
         <div class="contentMain">
+          <div class="main-hero">
+            <div class="miniHeader">
+              <p class="miniHeaderText">Posetite nas širom Srbije!</p>
+            </div>
+            <div class="slider">
+              <img src="images/slider0.jpg" />
+              <img src="images/slider1.jpg" />
+              <img src="images/slider2.jpg" />
+              <img src="images/slider3.jpg" />
+              <img src="images/slider4.jpg" />
+            </div>
+          </div>
 
+          <div class="snizenja">
+            <div class="miniHeader snizen">
+              <p class="miniHeaderText">Sniženja za članove kluba! - 30% do kraja februara!</p>
+            </div>
+            <div id="snizeneKnjige">
+            </div>
+          </div>
+
+          <div id=autorDana>
+
+          </div>
         </div>
-
       </div>
-
+      <footer id="footer">
+			<div class="footerBlock">
+				<ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="shop.html">Prodavnica</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="aboutUs.html">O nama</a></li>
+				</ul>
+			</div>
+			<div class="footerBlock">
+				<ul>
+					<li><a href="oAutoru.html">&copy;Filip Vuskovic 143/17 - All rights reserved</a></li>
+					<li><a href="sitemap.xml">SITEMAP</a>&nbsp;|&nbsp;<a href="documentation.pdf">DOKUMENTACIJA</a>&nbsp;|<a href="robots.txt">ROBOTS</a></li>
+				</ul>
+			</div>
+			<div class="footerBlock footerResponsive" id="contact">
+				<ul>
+					<li><span class="fas fa-map-marker-alt"></span> Location: Belgrade, Serbia</li>
+					<li><span class="fas fa-phone-volume"></span> Phone: +38169/4063/883</li>
+					<li><span class="fas fa-at"></span> E-Mail: Library.biz&#64;gmail.com</li>
+				</ul>
+			</div>
+		</footer>
     </div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>

@@ -10,6 +10,7 @@
   box-sizing: border-box;
   font-family: robotoFont;
   font-weight: bold;
+  height: auto;
 }
 
 ul {
@@ -36,7 +37,14 @@ input[type="button"] {
   cursor: pointer;
   border-radius: 3px;
   background-color: #c1c1c1;
-  border-style: outset;
+  border-style: none;
+  background-color: #8F6E3C;
+  color: #fff;
+  transition: ease 1s;
+}
+
+input[type="button"]:hover {
+background-color: #b78e50;
 }
 
 /*/NORMALIZE*/
@@ -79,6 +87,7 @@ input[type="button"] {
 
 .navigationList li a {
   padding: 5px;
+  transition: ease 2s;
 }
 
 .navigationList li a:hover {
@@ -95,15 +104,13 @@ input[type="button"] {
 /*CONTENT*/
 .contentWrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 80px;
-  height: inherit;
 }
 
 /*SIDEBAR*/
 .contentSide {
-  width: 15%;
-  height: auto;
+  width: 20%;
 }
 
 .sideBox {
@@ -116,9 +123,17 @@ input[type="button"] {
 .webForm {
   padding: 20px;
 }
+
 .registerForm {
   display: none;
   border-top: 1px dotted #8F6E3C;
+}
+
+#errorBox {
+  display: none;
+  font-size: 12px;
+  padding: 5px 20px;
+  color: red;
 }
 
 .topFive {
@@ -166,10 +181,96 @@ input[type="button"] {
   font-size: 13px;
 }
 
-/*/SIDEBAR*/
+  /*/SIDEBAR*/
 
-/*MAIN*/
-.contentMain {
-  width: 80%;
-}
-/*/MAIN*/
+  /*MAIN*/
+  .contentMain {
+    width: 950px;
+  }
+
+  .main-hero {
+    height: 650px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .slider > img {
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+  }
+
+  .snizen {
+    border-radius: 8px;
+  }
+
+  #snizeneKnjige {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .snizeno {
+    padding: 5px;
+    text-align: center;
+    min-height: 300px;
+    border-radius: 8px;
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.4);
+  }
+
+  .snizeno img {
+    border-radius: 8px;
+  }
+
+  #autorDana {
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+
+  .autorHold {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .autorHold img {
+    border-radius: 8px;
+  }
+
+  .autorText {
+    font-size: 18px;
+    padding-top: 25px;
+    width: 45%;
+  }
+  /*/MAIN*/
+
+  /*FOOTER*/
+  #footer {
+    width: 100%;
+    height: 200px;
+    background-color: #FFF;
+    border-bottom: 10px solid #8F6E3C;
+    border-top: 1px solid #8F6E3C;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footerBlock {
+    width: 33%;
+    height: inherit;
+  }
+  .footerBlock:last-child {
+    border-right: none;
+  }
+  .footerBlock ul {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*/FOOTER*/
